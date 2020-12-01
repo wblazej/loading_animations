@@ -1,0 +1,39 @@
+.loading-box {
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(33, 112, 223);
+    position: absolute;
+    top: 0px;
+    opacity: .5;
+}
+
+#dot1 { left: 0px; animation: animation 1s infinite; animation-delay: 0s; }
+#dot2 { left: 35px; animation: animation 1s infinite; animation-delay: .2s; }
+#dot3 { left: 70px; animation: animation 1s infinite; animation-delay: .4s; }
+
+@keyframes animation {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+    }
+    50% {
+        width: 30px;
+        height: 30px;
+        transform: translate(-5px, -5px);
+        opacity: 1;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+    }
+}

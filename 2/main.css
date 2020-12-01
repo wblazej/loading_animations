@@ -1,0 +1,33 @@
+.loading-box {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(33, 112, 223);
+    opacity: 0;
+    display: inline-block;
+    margin: 1px;
+}
+
+.empty {
+    background-color: transparent !important;
+}
+
+#s1 { animation: square_animation 1.05s infinite; animation-delay: 0s; }
+#s2 { animation: square_animation 1.05s infinite; animation-delay: .15s; }
+#s3 { animation: square_animation 1.05s infinite; animation-delay: .3s; }
+#s4 { animation: square_animation 1.05s infinite; animation-delay: .45s; }
+#s5 { animation: square_animation 1.05s infinite; animation-delay: .6s; }
+#s6 { animation: square_animation 1.05s infinite; animation-delay: .75s; }
+#s7 { animation: square_animation 1.05s infinite; animation-delay: .9s; }
+#s8 { animation: square_animation 1.05s infinite; animation-delay: 1.05s; }
+
+@keyframes square_animation {
+    00% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
